@@ -1,0 +1,11 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<window id="win" title="xml範例" border="normal" viewModel="@id('vm') @init('com.eeitxx.vm.Obj2Xml')"
+ onSubmit="@command('getxml')">
+	<hbox>
+		<button label="xmlbtn" onClick="@command('getXml')"></button>
+		<button label="驗証授權" onClick="@command('checkAuth')"></button>
+	</hbox>
+	<hbox>
+		<label id="lab" value="@load(vm.xmlstr)"></label>
+	</hbox>
+</window>

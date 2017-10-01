@@ -1,0 +1,20 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<window title="" border="none" width="100%" viewModel="@id('vm') @init('com.eeitxx.vm.MenuViewModel')">
+<menubar orient="vertical" width="100%" >
+	<menuitem label="使用者" onClick="@command('callFunctin', data1=self.label)"/>
+	<menuitem label="b" onClick="@command('callFunctin', data1=self.label)"/>
+	<menuitem label="連線測試" value="/zul/connect_test.zul" onClick="@command('callConnect', data1=self.label) @global-command('forward', data1=self.value)"/>
+	<menuitem label="xml範例" value="/zul/xmlDemo.zul" onClick="@global-command('forward', data1=self.value)"/>
+	<menuitem label="iReport範例" value="/zul/iReportDemo.zul" onClick="@global-command('forward', data1=self.value)"/>
+</menubar>
+
+<!-- <menubar orient="vertical"> -->
+<!-- 	<menu label="a" ></menu> -->
+<!-- 	<menu label="ba" ></menu> -->
+<!-- </menubar> -->
+<!-- 	<tree model="@load()" viewModel="@id('vm') @init('')" apply="org.zkoss.bind.BindComposer"> -->
+<!-- 		<treecols > -->
+<!-- 			<treecol label="a" ></treecol> -->
+<!-- 		</treecols> -->
+<!-- 	</tree> -->
+</window>

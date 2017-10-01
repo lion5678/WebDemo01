@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+	<bean id="hostInfo" class="com.eeitxx.connect.BaseConnect"  destroy-method="destroy">
+		<constructor-arg name="ip" value="127.0.0.1" />
+		<constructor-arg name="port" value="1234" />
+		<constructor-arg name="type" value="Server"/>
+	</bean>
+ -->
+	<bean id="server" class="com.eeitxx.init.InitProcess" init-method="init">
+	</bean>
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration >
+ 
+    <Appenders>
+    	 <Console name="Console" target="SYSTEM_OUT">  
+            <PatternLayout pattern="%d %p (%c-%M) - %m%n" />  
+        </Console>
+    </Appenders>
+    <Loggers>
+		<logger name="org.springframework" level="ERROR"></logger>
+		<logger name="org.zkoss" level="ERROR"></logger>
+		<logger name="net.sf.jasperreports" level="ERROR"></logger>
+		<logger name="org.apache.commons" level="ERROR"></logger>
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+		</Root>
+    </Loggers>
+ 
+</Configuration>

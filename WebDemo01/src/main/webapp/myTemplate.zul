@@ -1,0 +1,12 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<borderlayout width="90%" height="100%" style="margin: 0px auto;" >
+		<north border="0" size="50px" >
+			<include src="/top.zul" />
+		</north>
+		<west width="150px" border="0" autoscroll="true" collapsible="true" splittable="true" >
+			<include src="/WEB-INF/menu.zul"></include>
+		</west>
+		<center self="@insert(content)"></center>
+	</borderlayout>
+</zk>

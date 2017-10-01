@@ -1,0 +1,5 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/myTemplate.zul" ?>
+<zk>
+	<include id="mainInclude" self="@define(content)" src="@load(vm.page)" viewModel="@id('vm') @init('com.eeitxx.vm.ForwardPage')"/>
+</zk>

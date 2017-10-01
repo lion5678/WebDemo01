@@ -1,0 +1,6 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<div align="center" sclass="main_div">
+<!-- 		<label value="@load(vm.page)" /> -->
+	</div>
+</zk>

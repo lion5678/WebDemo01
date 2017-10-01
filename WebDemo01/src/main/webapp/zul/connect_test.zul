@@ -1,0 +1,12 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="連線測試" border="normal" viewModel="@id('vm') @init('com.eeitxx.vm.ConnectTestViewModel')">
+<button label="開啟連線" onClick="@command('conntest')" />
+<hbox>
+	<label value="@load(vm.ipaddr)" />
+</hbox>
+<hbox>
+	<label value="@load(vm.label)" />
+</hbox>
+</window>
+</zk>

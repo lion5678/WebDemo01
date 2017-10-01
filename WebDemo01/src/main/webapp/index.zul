@@ -1,0 +1,11 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<div align="center" style="margin-top:100px" >
+	<window border="none" apply="org.zkoss.bind.BindComposer" 
+		viewModel="@id('vm') @init('com.eeitxx.vm.MainPageViewModel')">
+		<hbox style="padding-bottom:5px"><button label="sayHello" onClick="@command('sayHello')" /></hbox>
+		<hbox><button label="進入" onClick="@command('gotoIndex1')" /></hbox>
+		<label value="@load(vm.label)"></label>
+	</window>
+</div>
+</zk>

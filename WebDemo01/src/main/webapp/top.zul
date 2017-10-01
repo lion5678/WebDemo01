@@ -1,0 +1,6 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<window title="" border="none" >
+	<hbox width="100%" pack="end">
+		<a href="/index.zul" label="回首頁" />
+	</hbox>
+</window>

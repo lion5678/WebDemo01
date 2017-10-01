@@ -1,0 +1,21 @@
+<?page title="Authority" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Authority" border="normal" mode="modal" width="250px" closable="true" 
+		viewModel="@id('vm') @init('com.eeitxx.util.CreateAuthWindow')" >
+		<grid sizedByContent="true" >
+			<rows>
+				<row>
+					<label value="帳號：" />
+					<textbox value="@save(vm.id)"/>
+				</row>
+				<row>
+					<label value="密碼：" />
+					<textbox value="@save(vm.passwd)" />
+				</row>
+				<row>
+					<button label="確認" onClick="@command('checkAuth1')"/>
+				</row>
+			</rows>
+		</grid>
+	</window>
+</zk>

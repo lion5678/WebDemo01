@@ -1,0 +1,7 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+<!-- window 要有title , 才看的到closable -->
+<window title="@load(vm.title)" width="80%" height="80%"  mode="modal" closable="true" maximizable="true" border="normal" viewModel="@id('vm') @init('com.eeitxx.vm.ReportTemplateVM')">
+	<iframe height="100%" width="100%" content="@load(vm.media)" />
+</window>
+</zk>

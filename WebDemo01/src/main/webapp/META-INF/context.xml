@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/myoracle" auth="Container"
+	              type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
+	              url="jdbc:oracle:thin:@192.168.0.180:1521/orcl"
+	              username="c##citi_user" password="111111" maxTotal="20" maxIdle="10"
+	              maxWaitMillis="-1"/>
+</Context>
